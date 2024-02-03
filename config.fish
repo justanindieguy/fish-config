@@ -22,12 +22,12 @@ if type -q exa
   alias ll "exa -lg --icons --group-directories-first"
 end
 
-set -gx EDITOR lvim
+set -gx EDITOR nvim
 set -gx BROWSER wslview
 set -gx GH_BROWSER wslview
 
 # NVM
-set -gx nvm_default_version 18.15.0
+set -gx nvm_default_version 20.10.0
 set --query nvm_default_version &&
 nvm use $nvm_default_version >/dev/null
 
