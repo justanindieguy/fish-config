@@ -14,6 +14,9 @@ alias mv "mv -v"
 alias rm "rm -v"
 alias cp "cp -v"
 alias v "lvim"
+alias rimraf "rimraf -v"
+alias rraf "rimraf"
+alias rgrep "rgrep --color=always"
 
 function echo_PATH
   for dir in $PATH
@@ -28,10 +31,11 @@ end
 
 set -gx EDITOR nvim
 set -gx BROWSER wslview
+set -gx CHROME_BIN /snap/bin/chromium
 set -gx GH_BROWSER wslview
 
 # NVM
-set -gx nvm_default_version 20.10.0
+set -gx nvm_default_version 22.11.0
 set --query nvm_default_version &&
 nvm use $nvm_default_version >/dev/null
 
